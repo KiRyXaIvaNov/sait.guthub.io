@@ -9,32 +9,33 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="header-top">
+    <div class="header-top">
             <a href="" class="logo">Иванов Кирилл</a>
             <nav class="navigation">
                 <ul class="menu">
-                    <li class="menu-element"><a class="menu-link" href="">О себе</a></li>
-                    <li class="menu-element"><a class="menu-link" href="">Достижения</a></li>
-                    <li class="menu-element"><a class="menu-link" href="">Видеоэссе</a></li>
+                    <li class="menu-element"><a class="menu-link" href="#about">О себе</a></li>
+                    <li class="menu-element"><a class="menu-link" href="#ach">Достижения</a></li>
+                    <li class="menu-element"><a class="menu-link" href="#video">Видеоэссе</a></li>
                 </ul>
-
             </nav>
-
         </div>
+
+    <header class="header">
+
         <div class="header-center">
+
             <h1 class="name">Иванов Кирилл</h1>
             <p class="description">Здравствуйте, меня зовут Кирилл. Я хочу попасть на программу ТОП-ИТ. Давайте знакомиться</p>
 
         </div>
     </header>
-    <section class="about-me">
-        <div class="left">
-            <img src="images/z111.png" alt="My photo" />
-        </div>
 
-        <div class="right">
-            <p class="about-me__title"> Иванов Кирилл Александрович</p>
+    <section class="about-me" id="about" style="display:flex; background: lightgray">
+        <div class="left" style="flex: 1 1 50%">
+            <img src="images/z.jpg" height="700"   alt="My photo" class="about-me__image">
+        </div>
+        <div class="right" style="flex 1 1 50%; font-size: 20px;">
+
             <p class="about-me__description">Здравствуйте, для меня важно попасть в программу ТОП-ИТ. Я очень хочу быть участником </p>
             <p class="about-me__description">данной программы, так как для меня это возможность получить хорошее образование, а также </p>
             <p class="about-me__description">практические навыки.</p>
@@ -54,15 +55,16 @@
 
         </div>
     </section>
-    <section class="achievements">
+
+    <section class="achievements" id="ach" style="background: lightgray">
         <h2 class="second-title"> Достижения</h2>
-        <ul class="achievements-list">
-            <li class="achievements-list__element"> Достижение 1 </li>
-            <li class="achievements-list__element">Достижение 2</li>
-        </ul>
+        <img src="images/vse.png" alt="Код будущего" />
+
+
 
     </section>
-    <section class="video">
+
+    <section class="video" id="video">
         <h2 class="second-title"> Видеоэссе</h2>
         <video src="images/test.mp4" width="600" height="360" controls>.
           Ваш браузер не поддерживает тег <code>video</code>.

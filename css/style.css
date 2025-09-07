@@ -1,5 +1,6 @@
 .header {
     height: 100vh;
+    bottom: 80px;
     background: url("../images/fon2.jpg") no-repeat center ;
     background-size: cover;
 }
@@ -7,11 +8,13 @@
     color: #ffffff;
     background: black;
 
+    position: sticky;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-evently;
     height: 80 px;
-    background: rgb(0,0,0,50%)
+    background: rgb(0,0,0,90%)
 
 }
 
@@ -41,19 +44,23 @@ a:hover {
     font-size: 20px;
 }
 .header-center{
-    margin-top: 300px;
+
     color: #fff;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center ;
     justify-content: center;
     height: calc(100vh-80px);
 }
 
 .name {
+
     font-size: 60px;
 
 }
-.description{
+
+.description {
     font-size: 35px;
-}
+}.
+
+
